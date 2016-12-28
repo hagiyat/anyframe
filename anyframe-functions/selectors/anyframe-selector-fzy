@@ -2,9 +2,9 @@ local fzy_path
 zstyle -s ":anyframe:selector:fzy:" command fzy_path || fzy_path='fzy'
 
 if [[ $# -gt 0 ]]; then
-  ${=fzy_path} --query "$@"
+  eval "$fzy_path --query $@"
 else
-  ${=fzy_path}
+  eval "$fzy_path"
 fi
 
 # Local Variables:

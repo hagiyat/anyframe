@@ -1,8 +1,8 @@
 # Usage : anyframe-selector-auto [query] [options]...
-# Launch peco, percol, or fzf
+# Launch peco, percol, fzf, or fzy
 #
 # query : pre-input query
-# options : specify additional options for peco, percol, or fzf
+# options : specify additional options for peco, percol, fzf, or fzy
 #
 # Example : anyframe-selector-auto "$LBUFFER" --initial-index 1
 
@@ -27,7 +27,6 @@ if [[ $selector_mode != 'peco' ]] &&
     echo "anyframe: not found any of peco, percol, fzf or fzy" 1>&2
     return 1
   fi
-  echo $selector_mode
 fi
 
 if [[ "$selector_mode" == 'peco' ]]; then
