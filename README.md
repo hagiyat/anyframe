@@ -4,7 +4,7 @@
 
 ## How to set up
 
-First of all, you need to install [peco](https://github.com/peco/peco), [percol](https://github.com/mooz/percol), or [fzf](https://github.com/junegunn/fzf)
+First of all, you need to install [peco](https://github.com/peco/peco), [percol](https://github.com/mooz/percol), [fzf](https://github.com/junegunn/fzf) or [fzy](https://github.com/jhawthorn/fzy)
 
 ### Manually install
 
@@ -95,6 +95,8 @@ zstyle ":anyframe:selector:" use peco
 zstyle ":anyframe:selector:" use percol
 # expressly specify to use fzf
 zstyle ":anyframe:selector:" use fzf
+# expressly specify to use fzy
+zstyle ":anyframe:selector:" use fzy
 
 # specify path and options for peco, percol, or fzf
 zstyle ":anyframe:selector:peco:" command 'peco --no-ignore-case'
