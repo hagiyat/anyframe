@@ -27,6 +27,7 @@ if [[ $selector_mode != 'peco' ]] &&
     echo "anyframe: not found any of peco, percol, fzf or fzy" 1>&2
     return 1
   fi
+  echo $selector_mode
 fi
 
 if [[ "$selector_mode" == 'peco' ]]; then
